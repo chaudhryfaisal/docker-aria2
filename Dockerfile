@@ -4,7 +4,7 @@ MAINTAINER OpenGG <liy099@gmail.com>
 COPY root/ /
 
 RUN set -xe \
-    && apk add --no-cache aria2 \
+    && apk add --no-cache aria2 ca-certificates \
     && chmod +x /init.sh
 
 VOLUME /config /downloads
